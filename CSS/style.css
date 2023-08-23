@@ -14,7 +14,6 @@
 }
 
 body{
-    /*background-color: white;*/
     background-image: url(./wallpaper.jpg);
     background-size: cover; /*Redimensionar a imagem para cobrir todo o fundo */
     background-repeat: no-repeat; /*Evitar a repetição da imagem */
@@ -64,4 +63,24 @@ body{
     color: var(--secondy-color);
     font-family: var(--primary-font);
     font-size: 24px;
+}
+
+@media(max-width: 920px){
+    body{
+        background-image: url(./wallpaper\ media.jpg);
+        background-size: cover; /*Redimensionar a imagem para cobrir todo o fundo */
+        background-repeat: no-repeat; /*Evitar a repetição da imagem */
+    }
+
+    .cabecalho-titulo{
+        font-size: 28px;
+    }
+
+    .cabecalho-botao{
+        font-size: 18px;
+    }
+    
+    .menu-imagem{
+        width: 160px;
+    }
 }
