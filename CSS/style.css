@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
+
+:root{
+    --primary-color: #E50914;
+    --secondy-color: #ffffff;
+    --tertiary-color: #000000;
+    --primary-font: 'Oswald', sans-serif;
+}
+
+*{
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
+body{
+    /*background-color: white;*/
+    background-image: url(./wallpaper.jpg);
+    background-size: cover; /*Redimensionar a imagem para cobrir todo o fundo */
+    background-repeat: no-repeat; /*Evitar a repetição da imagem */
+}
+
+.cabecalho{
+    background-color: var(--primary-color);
+    padding: 2%;
+    font-family: var(--primary-font);
+}
+    .cabecalho-botoes{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+    }
+
+    .cabecalho-titulo{
+        color: var(--secondy-color);
+        font-size: 36px;
+        text-decoration: none;
+    }
+
+    .cabecalho-botao{
+        padding: 10px;
+        color: var(--tertiary-color);
+        font-size: 24px;
+        text-decoration: none;
+    }
+
+.menu{
+    margin: 2%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+    .menu-imagem{
+        display: flex;
+        width: 210px;
+        padding: 20px;
+    }
+
+.rodape{
+    padding: 1%;
+    text-align: center;
+    background-color: var(--primary-color);
+    color: var(--secondy-color);
+    font-family: var(--primary-font);
+    font-size: 24px;
+}

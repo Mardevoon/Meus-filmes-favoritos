@@ -1,0 +1,1 @@
+Olá. Este é um projeto de desenvolvimento de site de estudo voltado para os meus filmes favoritos.
