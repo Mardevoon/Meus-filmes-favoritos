@@ -1,113 +1,108 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
 
-:root{
-    --primary-color: #E50914;
-    --secondy-color: #ffffff;
-    --tertiary-color: #000000;
-    --primary-font: 'Oswald', sans-serif;
-    --secondy-font: Arial, Helvetica, sans-serif;
+:root {
+  --primary-color: #E50914;
+  --secondy-color: #ffffff;
+  --tertiary-color: #000000;
+  --primary-font: 'Oswald', sans-serif;
+  --secondy-font: Arial, Helvetica, sans-serif;
 }
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-body{
-    background: var(--primary-color) url(./wallpaper.jpg) no-repeat center/cover;
+body {
+  background: var(--primary-color) url(./wallpaper.jpg) no-repeat center/cover;
 }
 
-.cabecalho{
-    background-color: var(--primary-color);
-    padding: 2%;
-    font-family: var(--primary-font);
+.cabecalho {
+  background-color: var(--primary-color);
+  padding: 2%;
+  font-family: var(--primary-font);
 }
-    .cabecalho-botoes{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        text-align: center;
-    }
-
-    .cabecalho-titulo,
-    .cabecalho-botao{
-        color: var(--secondy-color);
-        font-size: 36px;
-        text-decoration: none;
-    }
-
-    .cabecalho-botao{
-        color: var(--tertiary-color);
-        padding: 10px;
-        font-size: 24px;
-    }
-
-.menu{
-    margin: 2%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+.cabecalho-botoes {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
 }
-    .menu-imagem{
-        width: 14%;
-        padding: 20px;
-        border-radius: 25px;
-    }
-
-    .menu-post{
-        margin: 12px;
-        display: flex;
-        flex-direction:row;
-        padding: 8px 0;
-        border-radius: 6px;
-        background-color: #ffffff;
-        box-shadow: 0 3px 5px 3px rgba(0, 0, 0, 0.09);
-        max-width: auto;
-    }
-
-    .menu-botao,
-    .menu-conteudo{
-        display: flex;
-        flex-direction: column;
-        padding: 40px 0px;
-        font-family: var(--secondy-font);
-        color:var(--tertiary-color)
-    }
-
-    .menu-botao{
-        padding: 60px 0px;
-        font-weight: 600;
-        text-decoration: none;
-    }
-
-.rodape{
-    padding: 1%;
-    text-align: center;
-    background-color: var(--primary-color);
-    color: var(--secondy-color);
-    font-family: var(--primary-font);
-    font-size: 24px;
+.cabecalho-titulo,
+.cabecalho-botao {
+  color: var(--secondy-color);
+  font-size: 36px;
+  text-decoration: none;
+}
+.cabecalho-botao {
+  padding: 10px;
+  font-size: 24px;
+  color: var(--tertiary-color);
 }
 
-@media(max-width: 920px){
-    body{
-        background: var(--primary-color) url(./wallpaper\ media.jpg) no-repeat center/cover;
-    }
+.menu {
+  margin: 2%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.menu-imagem {
+  width: 14%;
+  padding: 20px;
+  border-radius: 25px;
+}
+.menu-post {
+  margin: 12px;
+  display: flex;
+  flex-direction: row;
+  padding: 8px 0;
+  border-radius: 6px;
+  background-color: var(--secondy-color);
+  box-shadow: 0 3px 5px 3px rgba(0, 0, 0, 0.09);
+  max-width: auto;
+}
+.menu-botao,
+.menu-conteudo {
+  display: flex;
+  flex-direction: column;
+  font-family: var(--secondy-font);
+  color: var(--tertiary-color);
+  padding: 40px 0;
+}
+.menu-botao {
+  font-weight: 600;
+  text-decoration: none;
+  padding: 60px 0;
+}
 
-    .cabecalho-titulo{
-        font-size: 28px;
-    }
+.rodape {
+  padding: 1%;
+  text-align: center;
+  background-color: var(--primary-color);
+  color: var(--secondy-color);
+  font-family: var(--primary-font);
+  font-size: 24px;
+}
 
-    .cabecalho-botao{
-        font-size: 18px;
-    }
-    
-    .menu-imagem{
-        width: 160px;
-    }
+@media (max-width: 920px) {
+  body {
+    background: var(--primary-color) url(./wallpaper\ media.jpg) no-repeat center/cover;
+  }
 
-    .menu-post{
-        flex-direction: column;
-    }
+  .cabecalho-titulo {
+    font-size: 28px;
+  }
+
+  .cabecalho-botao {
+    font-size: 18px;
+  }
+
+  .menu-imagem {
+    width: 160px;
+  }
+
+  .menu-post {
+    flex-direction: column;
+  }
 }
