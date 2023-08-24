@@ -14,9 +14,7 @@
 }
 
 body{
-    background-image: url(./wallpaper.jpg);
-    background-size: cover; /*Redimensionar a imagem para cobrir todo o fundo */
-    background-repeat: no-repeat; /*Evitar a repetição da imagem */
+    background: var(--primary-color) url(./wallpaper.jpg) no-repeat center/cover;
 }
 
 .cabecalho{
@@ -31,17 +29,17 @@ body{
         text-align: center;
     }
 
-    .cabecalho-titulo{
+    .cabecalho-titulo,
+    .cabecalho-botao{
         color: var(--secondy-color);
         font-size: 36px;
         text-decoration: none;
     }
 
     .cabecalho-botao{
-        padding: 10px;
         color: var(--tertiary-color);
+        padding: 10px;
         font-size: 24px;
-        text-decoration: none;
     }
 
 .menu{
@@ -51,7 +49,6 @@ body{
     justify-content: center;
 }
     .menu-imagem{
-        display: flex;
         width: 210px;
         padding: 20px;
     }
@@ -67,9 +64,7 @@ body{
 
 @media(max-width: 920px){
     body{
-        background-image: url(./wallpaper\ media.jpg);
-        background-size: cover; /*Redimensionar a imagem para cobrir todo o fundo */
-        background-repeat: no-repeat; /*Evitar a repetição da imagem */
+        background: var(--primary-color) url(./wallpaper\ media.jpg) no-repeat center/cover;
     }
 
     .cabecalho-titulo{
