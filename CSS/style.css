@@ -5,12 +5,13 @@
     --secondy-color: #ffffff;
     --tertiary-color: #000000;
     --primary-font: 'Oswald', sans-serif;
+    --secondy-font: Arial, Helvetica, sans-serif;
 }
 
 *{
     margin: 0;
-    border: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body{
@@ -49,8 +50,35 @@ body{
     justify-content: center;
 }
     .menu-imagem{
-        width: 210px;
+        width: 14%;
         padding: 20px;
+        border-radius: 25px;
+    }
+
+    .menu-post{
+        margin: 12px;
+        display: flex;
+        flex-direction:row;
+        padding: 8px 0;
+        border-radius: 6px;
+        background-color: #ffffff;
+        box-shadow: 0 3px 5px 3px rgba(0, 0, 0, 0.09);
+        max-width: auto;
+    }
+
+    .menu-botao,
+    .menu-conteudo{
+        display: flex;
+        flex-direction: column;
+        padding: 40px 0px;
+        font-family: var(--secondy-font);
+        color:var(--tertiary-color)
+    }
+
+    .menu-botao{
+        padding: 60px 0px;
+        font-weight: 600;
+        text-decoration: none;
     }
 
 .rodape{
@@ -77,5 +105,9 @@ body{
     
     .menu-imagem{
         width: 160px;
+    }
+
+    .menu-post{
+        flex-direction: column;
     }
 }
